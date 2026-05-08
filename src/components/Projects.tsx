@@ -1,10 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowUpRight, Search, Activity, Users } from "lucide-react";
+import { ExternalLink, ArrowUpRight, Search, Activity, Users, Building2, Database, LayoutTemplate } from "lucide-react";
 import { GithubIcon } from "./Icons";
 
 const projects = [
+  {
+    title: "R-CMS",
+    client: "Legacy Project",
+    description: "No-code portfolio builder designed for developers and small-to-medium enterprises to create professional digital presences effortlessly.",
+    stats: "Archived / Closed",
+    icon: <LayoutTemplate className="text-pink-500" />,
+    tags: ["No-code", "CMS", "Portfolio", "SME"]
+  },
+  {
+    title: "R-DBDesign",
+    client: "Acquired Venture",
+    description: "Visual database modeling tool and code generator with support for MySQL and MongoDB, featuring multi-framework export capabilities.",
+    stats: "Successfully Sold",
+    icon: <Database className="text-blue-500" />,
+    tags: ["DevTools", "Database", "Automation", "Acquired"]
+  },
+  {
+    title: "R-CRM",
+    client: "Acquired Venture",
+    description: "End-to-end CRM platform for real estate channel partners and brokers to streamline daily workflows and lead management.",
+    stats: "Successfully Sold",
+    icon: <Building2 className="text-emerald-500" />,
+    tags: ["SaaS", "Real Estate", "CRM", "Acquisition"]
+  },
   {
     title: "Spidy",
     client: "Adobe Systems",

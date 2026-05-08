@@ -119,8 +119,24 @@ export default function Experience() {
                 </div>
 
                 {/* Content Card */}
-                <div className="w-full md:w-[45%] ml-8 md:ml-0 group">
-                  <div className="glass p-8 rounded-3xl relative overflow-hidden group-hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5">
+                <div className="w-full md:w-[45%] ml-8 md:ml-0 group perspective-1000">
+                  <motion.div
+                    whileHover={{ 
+                      rotateY: index % 2 === 0 ? -10 : 10,
+                      rotateX: 5,
+                      scale: 1.02
+                    }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    className="glass p-8 rounded-3xl relative overflow-hidden group-hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5"
+                  >
+                    {/* Promotion Badge for Adobe */}
+                    {exp.company === "Adobe Systems" && (
+                      <div className="absolute -top-1 -right-1 bg-linear-to-r from-primary to-accent text-[10px] font-bold text-white px-4 py-1.5 rounded-bl-2xl shadow-lg z-20 flex items-center space-x-1 uppercase tracking-tighter">
+                        <Sparkles size={10} />
+                        <span>FTC ➔ FTE Promotion</span>
+                      </div>
+                    )}
+
                     {/* Hover Glow */}
                     <div className="absolute -inset-1 bg-linear-to-r from-primary/20 to-accent/20 blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
                     
@@ -157,7 +173,7 @@ export default function Experience() {
                         ))}
                       </ul>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
 
                 {/* Empty space for the other side on desktop */}

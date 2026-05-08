@@ -17,12 +17,6 @@ const achievements = [
     icon: <BookOpen className="text-secondary" />
   },
   {
-    title: "Public Speaking",
-    subtitle: "Technical Seminars",
-    detail: "Conducted technical seminars for audiences of 300+ students.",
-    icon: <MessageSquare className="text-accent" />
-  },
-  {
     title: "Rapid Delivery Award",
     subtitle: "Enterprise Project",
     detail: "Completed a complex 3-day automation project that secured a long-term contract.",
