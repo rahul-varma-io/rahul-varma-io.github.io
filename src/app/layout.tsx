@@ -10,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Rahul Varma | Senior Software Engineer",
   description: "Senior Software Engineer specializing in high-performance distributed systems, AI automation, and premium UI/UX.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
