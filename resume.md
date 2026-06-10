@@ -19,6 +19,7 @@ Strategic Full Stack Engineer with 7+ years of experience architecting high-perf
 **Career Break / Independent Projects**, Noida | Mar 2026 – Present
 - Taking a planned career break focused on family and independent product exploration
 - Building and validating automation and AI-driven tooling ideas for public-market use cases
+- Designed and launched Vault Track (vault-tracker.ragasave.com), a local-first PWA for budgeting, expense logging, and inventory management with offline sync.
 
 **Adobe Systems**, Noida | Senior Software Engineer Jan 2023 – March 2026
 - Architected Spidy, a distributed content validation platform scanning millions of Adobe.com pages; processed thousands of pages every 10 mins to eliminate SEO and localization issues.
@@ -49,6 +50,7 @@ Strategic Full Stack Engineer with 7+ years of experience architecting high-perf
 - **Milo Studio (Adobe):** Co-architected a high-volume bulk operations platform that reduced content update time from 5 minutes per page to hundreds of updates per minute through safe automation.
 - **SAP C4C:** Contributed to the core integration of Microsoft Office 365 (Outlook, Teams) within SAP Cloud for Customer (C4C), enabling real-time transcriptions, automated syncing, and enhanced collaboration workflows.
 - **TheMediSpot (Startup Founder):** Launched a digital platform during the COVID-19 pandemic to assist quarantined individuals with resource coordination. 
+- **Vault Track (Personal Venture):** Architected a local-first expense tracker, budget controller, and stock logger featuring automatic supplier ledger mapping and low-stock alerts.
 - **Open Source Contributor:** Active contributor to JQuery and Laravel; published utility libraries on GitHub and NPM.
 - **Rapid Delivery:** Completed a complex 3-day automation project that secured a long-term contract for the organization.
 - **Public Speaking:** Conducted technical seminars for audiences of 300+ students.

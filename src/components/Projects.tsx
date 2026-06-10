@@ -1,10 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowUpRight, Search, Activity, Users, Building2, Database, LayoutTemplate } from "lucide-react";
+import { ExternalLink, ArrowUpRight, Search, Activity, Users, Building2, Database, LayoutTemplate, Vault } from "lucide-react";
 import { GithubIcon } from "./Icons";
 
 const projects = [
+  {
+    title: "Vault Track",
+    client: "Personal Venture",
+    description: "Local-first expense tracker, budget controller, and stock manager featuring automated supplier ledgers and multi-workspace support.",
+    stats: "Live Product / PWA",
+    icon: <Vault className="text-emerald-500" />,
+    tags: ["React", "Local-first", "Expense-Tracker", "SaaS"],
+    link: "https://vault-tracker.ragasave.com/"
+  },
   {
     title: "R-CMS",
     client: "Legacy Project",
@@ -103,14 +112,42 @@ export default function Projects() {
                   <div className="p-3 rounded-2xl bg-white/5">
                     {project.icon}
                   </div>
-                  <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold bg-white/5 px-3 py-1 rounded-full">
-                    {project.client}
+                  <div className="flex items-center space-x-2">
+                    <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold bg-white/5 px-3 py-1 rounded-full">
+                      {project.client}
+                    </div>
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1.5 rounded-full bg-white/5 text-slate-400 hover:text-primary hover:bg-white/10 transition-colors"
+                        title="View Live Site"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <ExternalLink size={14} />
+                      </a>
+                    )}
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block group/title"
+                  >
+                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary group-hover/title:underline transition-colors flex items-center gap-1.5">
+                      {project.title}
+                      <ArrowUpRight size={18} className="text-slate-400 group-hover/title:text-primary transition-colors" />
+                    </h3>
+                  </a>
+                ) : (
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                )}
                 
                 <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
                   {project.description}
