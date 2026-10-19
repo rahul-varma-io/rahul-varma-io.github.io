@@ -6,10 +6,23 @@ import { useRef } from "react";
 
 const experiences = [
   {
+    company: "Vical Solutions",
+    role: "Consultant Software Engineer",
+    period: "Mar 2026 – Present",
+    location: "Bangalore, India",
+    badge: "Current Role",
+    description: [
+      "Led a 7-member engineering team in founding and delivering an e-commerce advertising and campaign management platform (Pacto) from the ground up, owning technical direction across frontend, backend, and DevOps.",
+      "Architected and developed core platform modules using Next.js and NestJS, while simultaneously driving technical delivery across 2 additional secondary client projects.",
+      "Established engineering standards including architecture design, code reviews, CI/CD pipelines, and Agile/Scrum execution across all projects."
+    ]
+  },
+  {
     company: "Adobe Systems",
     role: "Senior Software Engineer",
     period: "Jan 2023 – March 2026",
     location: "Noida, India",
+    badge: "FTC ➔ FTE Promotion",
     description: [
       "Architected Spidy, a distributed content validation platform scanning millions of Adobe.com pages.",
       "Engineered Spidy V2, achieving 2x performance gains and integrating international localization validation.",
@@ -129,11 +142,11 @@ export default function Experience() {
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     className="glass p-8 rounded-3xl relative overflow-hidden group-hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5"
                   >
-                    {/* Promotion Badge for Adobe */}
-                    {exp.company === "Adobe Systems" && (
+                    {/* Role Badge */}
+                    {exp.badge && (
                       <div className="absolute -top-1 -right-1 bg-linear-to-r from-primary to-accent text-[10px] font-bold text-white px-4 py-1.5 rounded-bl-2xl shadow-lg z-20 flex items-center space-x-1 uppercase tracking-tighter">
                         <Sparkles size={10} />
-                        <span>FTC ➔ FTE Promotion</span>
+                        <span>{exp.badge}</span>
                       </div>
                     )}
 

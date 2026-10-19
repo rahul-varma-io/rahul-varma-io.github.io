@@ -16,10 +16,10 @@ Strategic Full Stack Engineer with 7+ years of experience architecting high-perf
 
 ---
 ### Professional Experience
-**Career Break / Independent Projects**, Noida | Mar 2026 – Present
-- Taking a planned career break focused on family and independent product exploration
-- Building and validating automation and AI-driven tooling ideas for public-market use cases
-- Designed and launched Vault Track (vault-tracker.ragasave.com), a local-first PWA for budgeting, expense logging, and inventory management with offline sync.
+**Vical Solutions**, Bangalore | Consultant Software Engineer Mar 2026 – Present
+- Led a 7-member engineering team in founding and delivering an e-commerce advertising and campaign management platform (Pacto) from the ground up, owning technical direction across frontend, backend, and DevOps.
+- Architected and developed core platform modules using Next.js and NestJS, while simultaneously driving technical delivery across 2 additional secondary client projects.
+- Established engineering standards including architecture design, code reviews, CI/CD pipelines, environment setup, and Agile/Scrum execution across all projects.
 
 **Adobe Systems**, Noida | Senior Software Engineer Jan 2023 – March 2026
 - Architected Spidy, a distributed content validation platform scanning millions of Adobe.com pages; processed thousands of pages every 10 mins to eliminate SEO and localization issues.
