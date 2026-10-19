@@ -20,13 +20,13 @@ export default function Hero() {
             <Sparkles size={14} />
             <span>Available for innovative projects</span>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-6">
             Architecting <br />
             <span className="text-gradient">Distributed</span> <br />
             Systems at Scale.
           </h1>
-          
+
           <p className="text-lg text-slate-400 max-w-lg mb-8 leading-relaxed">
             Senior Software Engineer with 7+ years of experience. Specialist in bridging the gap between complex backend architecture and seamless UI/UX execution.
           </p>
@@ -73,7 +73,7 @@ export default function Hero() {
                   <span className="text-slate-300">whoami</span>
                 </div>
                 <div className="text-slate-400 mb-4">
-                  Rahul Varma: Senior SE @ Adobe.
+                  Rahul Varma: Full-stack engineer and tech lead passionate about building scalable products, solving complex problems, and turning ideas into impactful solutions.
                 </div>
                 <div className="flex space-x-3">
                   <span className="text-emerald-400">➜</span>
@@ -92,7 +92,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          
+
           {/* Floating Decorative Elements */}
           <motion.div
             animate={{ y: [0, -20, 0] }}
