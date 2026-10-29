@@ -1,10 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowUpRight, Search, Activity, Users, Building2, Database, LayoutTemplate, Vault } from "lucide-react";
-import { GithubIcon } from "./Icons";
+import { ExternalLink, ArrowUpRight, Search, Activity, Users, Building2, Database, LayoutTemplate, Vault, PenTool } from "lucide-react";
 
 const projects = [
+  {
+    title: "Inkin",
+    client: "Personal Venture",
+    description: "Free, local-first infinite canvas drawing and digital whiteboard app featuring pen tools, geometric shapes, rich text, multi-select, and export capabilities.",
+    stats: "Live Product / Web App",
+    icon: <PenTool className="text-indigo-400" />,
+    tags: ["Canvas", "Local-first", "Whiteboard", "PWA"],
+    link: "https://inkin.space/"
+  },
   {
     title: "Vault Track",
     client: "Personal Venture",
@@ -79,7 +87,7 @@ export default function Projects() {
               Selection of high-impact projects delivered for enterprise clients and independent ventures.
             </p>
           </motion.div>
-          
+
           <motion.a
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -107,7 +115,7 @@ export default function Projects() {
                 <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                   {project.icon}
                 </div>
-                
+
                 <div className="flex items-center justify-between mb-6">
                   <div className="p-3 rounded-2xl bg-white/5">
                     {project.icon}
@@ -148,7 +156,7 @@ export default function Projects() {
                     {project.title}
                   </h3>
                 )}
-                
+
                 <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
                   {project.description}
                 </p>

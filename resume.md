@@ -50,6 +50,7 @@ Strategic Full Stack Engineer with 7+ years of experience architecting high-perf
 - **Milo Studio (Adobe):** Co-architected a high-volume bulk operations platform that reduced content update time from 5 minutes per page to hundreds of updates per minute through safe automation.
 - **SAP C4C:** Contributed to the core integration of Microsoft Office 365 (Outlook, Teams) within SAP Cloud for Customer (C4C), enabling real-time transcriptions, automated syncing, and enhanced collaboration workflows.
 - **TheMediSpot (Startup Founder):** Launched a digital platform during the COVID-19 pandemic to assist quarantined individuals with resource coordination. 
+- **Inkin (Personal Venture):** Architected a free, local-first infinite canvas drawing and digital whiteboard app featuring pen tools, shapes, rich text, multi-select, and export with offline support.
 - **Vault Track (Personal Venture):** Architected a local-first expense tracker, budget controller, and stock logger featuring automatic supplier ledger mapping and low-stock alerts.
 - **Open Source Contributor:** Active contributor to JQuery and Laravel; published utility libraries on GitHub and NPM.
 - **Rapid Delivery:** Completed a complex 3-day automation project that secured a long-term contract for the organization.
